@@ -1,6 +1,6 @@
 # Sam Fiallos — Portfolio
 
-Personal portfolio in the **Aperture** direction: cinematic letterboxing, film grain, and reel-based presentation of experience and projects.
+Personal portfolio in the **Film** direction: cinematic letterboxing, film grain, and reel-based presentation of experience and projects.
 
 Live site: [www.samfiallos.com](https://www.samfiallos.com)
 
