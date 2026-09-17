@@ -1,8 +1,10 @@
 .gate {
+  /* Match .takes column: max-width 980px + 1rem gutters */
+  --reel-inset: max(1rem, calc((100vw - 980px) / 2 + 1rem));
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: max(1.25rem, calc(50vw - 220px));
+  scroll-padding-inline-start: var(--reel-inset);
   padding: 0.5rem 0 1.75rem;
   scrollbar-width: thin;
   scrollbar-color: #e8b86d #2a2420;
@@ -12,7 +14,9 @@
 .strip {
   display: flex;
   gap: 1.75rem;
-  padding: 0 max(1.25rem, calc(50vw - 220px));
+  padding-left: var(--reel-inset);
+  /* Extra trailing space so the last scene can still scrub into view */
+  padding-right: max(var(--reel-inset), calc(50vw - 210px));
   width: max-content;
 }
 

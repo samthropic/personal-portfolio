@@ -415,7 +415,7 @@
 }
 
 .clip {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   width: min(85vw, 420px);
   flex: 0 0 auto;
   opacity: calc(0.55 + (var(--p) * 0.45));
