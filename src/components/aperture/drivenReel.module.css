@@ -1,0 +1,32 @@
+.gate {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: max(1.25rem, calc(50vw - 220px));
+  padding: 0.5rem 0 1.75rem;
+  scrollbar-width: thin;
+  scrollbar-color: #e8b86d #2a2420;
+  -webkit-overflow-scrolling: touch;
+}
+
+.strip {
+  display: flex;
+  gap: 1.75rem;
+  padding: 0 max(1.25rem, calc(50vw - 220px));
+  width: max-content;
+}
+
+.hint {
+  margin: 0.35rem 0 0;
+  text-align: center;
+  font-family: var(--font-aperture-display), Impact, sans-serif;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, #f4ede0 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gate {
+    scroll-snap-type: proximity;
+  }
+}

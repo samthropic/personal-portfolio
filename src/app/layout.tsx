@@ -1,29 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, Cormorant_Garamond } from "next/font/google";
+import { site } from "@/data/site";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Bebas_Neue({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-aperture-display",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const body = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-aperture-body",
 });
 
 export const metadata: Metadata = {
-  title: "Sam Fiallos — Portfolio",
-  description: "Personal portfolio of Sam Fiallos.",
+  title: site.title,
+  description: site.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${display.variable} ${body.variable} h-full antialiased`}
     >
-      <body className="min-h-full font-sans">{children}</body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
