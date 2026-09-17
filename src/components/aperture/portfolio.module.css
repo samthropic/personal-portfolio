@@ -599,11 +599,14 @@
   max-width: 100%;
   min-width: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-snap-type: none;
 }
 
 .leadItem .still {
-  width: min(200px, 72%);
-  flex: 0 0 auto;
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
 }
 
 .creditLabel {
