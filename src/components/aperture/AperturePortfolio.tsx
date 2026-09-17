@@ -8,6 +8,7 @@ import {
   projects,
   site,
   skills,
+  studyAbroad,
   type Experience,
 } from "@/data/site";
 import { FilmFX } from "./FilmFX";
@@ -208,7 +209,7 @@ export function AperturePortfolio() {
             </div>
 
             <div className={styles.credits}>
-              <div className={styles.creditBlock}>
+              <div className={`${styles.creditBlock} ${styles.educationBlock}`}>
                 <h3>Education</h3>
                 <p className={styles.creditLead}>{education.school}</p>
                 <p>
@@ -220,22 +221,62 @@ export function AperturePortfolio() {
                 <p className={styles.muted}>
                   Coursework: {education.coursework.join(", ")}
                 </p>
+
+                <div className={styles.abroad}>
+                  <div className={styles.abroadCopy}>
+                    <span className={styles.creditLabel}>{studyAbroad.heading}</span>
+                    {studyAbroad.terms.map((t) => (
+                      <p key={`${t.place}-${t.term}`} className={styles.abroadTerm}>
+                        {t.place}
+                        <span aria-hidden> · </span>
+                        {t.term}
+                      </p>
+                    ))}
+                    <p className={styles.abroadNote}>{studyAbroad.note}</p>
+                  </div>
+                  <div
+                    className={styles.stillStrip}
+                    aria-label="Study abroad stills"
+                  >
+                    {studyAbroad.stills.map((still) => (
+                      <figure key={still.src} className={styles.still}>
+                        <div className={styles.stillInner}>
+                          <Image
+                            src={still.src}
+                            alt={still.alt}
+                            fill
+                            sizes="148px"
+                            className={styles.stillImg}
+                            style={
+                              still.position
+                                ? { objectPosition: still.position }
+                                : undefined
+                            }
+                          />
+                        </div>
+                        <figcaption className={styles.stillCap}>Still</figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                </div>
               </div>
 
-              <div className={styles.creditBlock}>
+              <div className={`${styles.creditBlock} ${styles.stackBlock}`}>
                 <h3>Stack</h3>
-                <p>
-                  <span className={styles.creditLabel}>Languages</span>
-                  {skills.languages.join(", ")}
-                </p>
-                <p>
-                  <span className={styles.creditLabel}>Frameworks</span>
-                  {skills.frameworks.join(", ")}
-                </p>
-                <p>
-                  <span className={styles.creditLabel}>Systems</span>
-                  {skills.systems.join(", ")}
-                </p>
+                <div className={styles.stackGrid}>
+                  <p>
+                    <span className={styles.creditLabel}>Languages</span>
+                    {skills.languages.join(", ")}
+                  </p>
+                  <p>
+                    <span className={styles.creditLabel}>Frameworks</span>
+                    {skills.frameworks.join(", ")}
+                  </p>
+                  <p>
+                    <span className={styles.creditLabel}>Systems</span>
+                    {skills.systems.join(", ")}
+                  </p>
+                </div>
               </div>
 
               <div className={`${styles.creditBlock} ${styles.leadershipBlock}`}>

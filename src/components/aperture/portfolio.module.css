@@ -510,13 +510,9 @@
 
 @media (min-width: 800px) {
   .credits {
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 1.25rem 2rem;
     gap: 1.75rem;
-  }
-
-  .creditBlock:last-child {
-    grid-column: 1 / -1;
   }
 }
 
@@ -528,6 +524,21 @@
   max-width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.stackGrid {
+  display: grid;
+  gap: 0.85rem 1.25rem;
+}
+
+.creditBlock .stackGrid p {
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .stackGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (min-width: 600px) {
@@ -638,6 +649,87 @@
   font-weight: 600;
   color: var(--tungsten);
   margin-bottom: 0.15rem;
+}
+
+.abroad {
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid color-mix(in srgb, var(--emulsion) 10%, transparent);
+  min-width: 0;
+  display: grid;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+@media (min-width: 560px) {
+  .abroad {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.85rem 2.5rem;
+  }
+}
+
+.abroadCopy {
+  min-width: 0;
+  max-width: 26rem;
+}
+
+.abroad .creditLabel {
+  margin-bottom: 0.45rem;
+}
+
+.abroadTerm {
+  margin: 0.2rem 0 0 !important;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: var(--emulsion);
+}
+
+.abroadNote {
+  margin: 0.55rem 0 0 !important;
+  color: var(--muted) !important;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  max-width: 100%;
+}
+
+.abroad .stillStrip {
+  margin-top: 0;
+  margin-left: auto;
+  padding: 0.15rem 0 0.25rem;
+  border-bottom: none;
+  width: max-content;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  justify-self: end;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 0.55rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--tungsten) var(--shadow);
+}
+
+.abroad .still {
+  flex: 0 0 auto;
+  width: min(46vw, 148px);
+  min-width: 0;
+}
+
+.abroad .stillInner {
+  aspect-ratio: 3 / 4;
+}
+
+@media (min-width: 560px) {
+  .abroad .still {
+    width: 132px;
+  }
+
+  .abroad .stillStrip {
+    overflow-x: visible;
+    scroll-snap-type: none;
+    max-width: none;
+  }
 }
 
 @media (max-width: 799px) {

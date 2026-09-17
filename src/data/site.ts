@@ -167,6 +167,29 @@ export const education = {
   ],
 };
 
+export const studyAbroad = {
+  heading: "Study Abroad",
+  terms: [
+    { place: "NYU London", term: "Spring 2025" },
+    { place: "NYU Paris", term: "Spring 2026" },
+  ],
+  note: "I spent two semesters studying abroad in London and Paris, getting to explore new places, meet people from all over, and experience different cultures. It ended up being one of my favorite parts of college!",
+  stills: [
+    {
+      src: "/stills/abroad-01.jpg",
+      alt: "Looking out at the lit Eiffel Tower across the Seine at night",
+    },
+    {
+      src: "/stills/abroad-03.jpg",
+      alt: "On a balcony overlooking an oasis valley in traditional white and gold attire",
+    },
+    {
+      src: "/stills/abroad-02.jpg",
+      alt: "Sitting in a snowy mountain field near a distant campfire at dusk",
+    },
+  ] satisfies Still[],
+};
+
 export const skills = {
   languages: ["Python", "Go", "TypeScript", "JavaScript", "C++", "C#", "SQL"],
   frameworks: [
