@@ -9,7 +9,7 @@
   min-height: 100vh;
   background: var(--void);
   color: var(--emulsion);
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
 
@@ -50,7 +50,7 @@
   background: color-mix(in srgb, var(--void) 88%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid color-mix(in srgb, var(--emulsion) 10%, transparent);
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -100,8 +100,10 @@
   margin: 0 0 1.25rem;
   color: var(--rec);
   font-family: var(--font-aperture-display), Impact, sans-serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .recDot {
@@ -128,10 +130,11 @@
 .name {
   margin: 0;
   font-family: var(--font-aperture-display), Impact, sans-serif;
-  font-size: clamp(4rem, 16vw, 9.5rem);
-  line-height: 0.9;
-  letter-spacing: 0.04em;
-  font-weight: 400;
+  font-size: clamp(3.25rem, 13vw, 7.75rem);
+  line-height: 0.85;
+  letter-spacing: 0.02em;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .credit {
@@ -144,7 +147,7 @@
 
 .meta {
   margin: 0.85rem 0 0;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.05rem;
   font-weight: 500;
   color: var(--tungsten);
@@ -166,7 +169,7 @@
   background: var(--emulsion);
   color: var(--void);
   text-decoration: none;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
 }
@@ -194,10 +197,12 @@
 
 .sectionHead h2 {
   margin: 0;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
-  font-size: clamp(2.1rem, 5vw, 3.1rem);
-  letter-spacing: -0.01em;
-  font-weight: 600;
+  font-family: var(--font-aperture-display), Impact, sans-serif;
+  font-size: clamp(1.95rem, 4.5vw, 2.85rem);
+  letter-spacing: 0.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.95;
 }
 
 .sectionHead p {
@@ -317,8 +322,10 @@
 .stillCap {
   margin: 0.35rem 0 0;
   font-family: var(--font-aperture-display), Impact, sans-serif;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
   color: var(--muted);
 }
 
@@ -333,14 +340,16 @@
 .takeNum {
   font-family: var(--font-aperture-display), Impact, sans-serif;
   color: var(--tungsten);
-  letter-spacing: 0.12em;
-  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .takeTitle,
 .clipMatte h3 {
   margin: 0;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(1.85rem, 4.5vw, 2.5rem);
   line-height: 1.05;
   letter-spacing: -0.01em;
@@ -356,7 +365,7 @@
 
 .takeDates {
   margin: 0 0 0.5rem;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.95rem;
   color: var(--muted);
 }
@@ -466,7 +475,7 @@
 
 .stack {
   margin: 0.75rem 0 0;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.95rem;
   color: var(--muted);
 }
@@ -477,7 +486,7 @@
   width: fit-content;
   color: var(--tungsten);
   text-decoration: none;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
   border-bottom: 1px solid color-mix(in srgb, var(--tungsten) 55%, transparent);
@@ -529,7 +538,7 @@
 
 .creditBlock h3 {
   margin: 0 0 0.75rem;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.01em;
   font-size: 1.35rem;
   font-weight: 600;
@@ -583,7 +592,7 @@
 .leadOrg {
   margin: 0.25rem 0 0 !important;
   color: var(--muted) !important;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.95rem !important;
 }
 
@@ -624,7 +633,7 @@
 
 .creditLabel {
   display: block;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--tungsten);
@@ -652,7 +661,7 @@
 .contact h2 {
   margin: 0 auto;
   max-width: 28rem;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.25rem);
   letter-spacing: -0.01em;
   font-weight: 600;
@@ -665,7 +674,7 @@
   color: var(--tungsten);
   font-size: clamp(1.35rem, 3vw, 1.85rem);
   text-decoration: none;
-  font-family: var(--font-aperture-body), Georgia, serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .contact > a:hover {
@@ -682,7 +691,7 @@
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -703,7 +712,7 @@
   max-width: 920px;
   margin: 2rem auto 0;
   padding: 1.25rem 1.25rem calc(2rem + clamp(1.25rem, 3.5vh, 2.5rem));
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   color: var(--muted);
   border-top: 1px solid color-mix(in srgb, var(--emulsion) 10%, transparent);

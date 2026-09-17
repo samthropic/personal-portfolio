@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, Cormorant_Garamond } from "next/font/google";
+import { Big_Shoulders, Barlow_Condensed } from "next/font/google";
 import { site } from "@/data/site";
 import "./globals.css";
 
-const display = Bebas_Neue({
-  weight: "400",
+const display = Big_Shoulders({
   subsets: ["latin"],
+  weight: ["600", "700", "800"],
   variable: "--font-aperture-display",
 });
 
-const body = Cormorant_Garamond({
+const body = Barlow_Condensed({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-aperture-body",
 });
 

@@ -23,7 +23,7 @@
 .hint {
   margin: 0.35rem 0 0;
   text-align: center;
-  font-family: var(--font-aperture-body), Georgia, "Times New Roman", serif;
+  font-family: var(--font-aperture-body), "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.9rem;
   color: color-mix(in srgb, #f4ede0 45%, transparent);
 }
