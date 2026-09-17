@@ -1,5 +1,9 @@
 # Sam Fiallos — Portfolio
 
+Personal portfolio in the **Aperture** direction: cinematic letterboxing, film grain, and reel-based presentation of experience and projects.
+
+Live site: [www.samfiallos.com](https://www.samfiallos.com)
+
 ## Getting started
 
 ```bash
@@ -8,6 +12,10 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Content
+
+Edit resume content in `src/data/site.ts`. Stills live in `public/stills/`; the film-burn intro is `public/fx/film-burn-intro.mp4`.
 
 ## Scripts
 
