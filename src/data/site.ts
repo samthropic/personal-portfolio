@@ -167,7 +167,14 @@ export const education = {
   ],
 };
 
-export const studyAbroad = {
+export type StudyAbroad = {
+  heading: string;
+  terms: { place: string; term: string }[];
+  note: string;
+  stills: Still[];
+};
+
+export const studyAbroad: StudyAbroad = {
   heading: "Study Abroad",
   terms: [
     { place: "NYU London", term: "Spring 2025" },
@@ -187,7 +194,7 @@ export const studyAbroad = {
       src: "/stills/abroad-02.jpg",
       alt: "Sitting in a snowy mountain field near a distant campfire at dusk",
     },
-  ] satisfies Still[],
+  ],
 };
 
 export const skills = {
