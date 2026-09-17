@@ -160,8 +160,10 @@ export const education = {
     "Algorithms",
     "Artificial Intelligence",
     "Computer Networking",
+    "Operating Systems",
     "Computer Architecture",
-    "Object-Oriented Programming",
+    "Agile Development & DevOps",
+    "Open Source & Professional Development",
   ],
 };
 
