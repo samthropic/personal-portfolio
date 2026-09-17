@@ -599,14 +599,30 @@
   max-width: 100%;
   min-width: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-snap-type: none;
+  /* Phone: swipeable reel with larger frames */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 0.65rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .leadItem .still {
-  flex: 1 1 0;
-  width: auto;
+  flex: 0 0 auto;
+  width: min(82vw, 300px);
   min-width: 0;
+}
+
+@media (min-width: 700px) {
+  .leadItem .stillStrip {
+    overflow-x: hidden;
+    scroll-snap-type: none;
+    gap: 0.65rem;
+  }
+
+  .leadItem .still {
+    flex: 1 1 0;
+    width: auto;
+  }
 }
 
 .creditLabel {
