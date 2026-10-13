@@ -122,7 +122,9 @@ export function AperturePortfolio() {
             NYU Tandon · CS · 2027
           </p>
           <div className={styles.heroActions}>
-            <a href="#experience">Watch the reel</a>
+            <a href={site.resume} download="Sam_Fiallos_Resume.pdf">
+              Resume
+            </a>
             <a className={styles.ghost} href={`mailto:${site.email}`}>
               Email
             </a>

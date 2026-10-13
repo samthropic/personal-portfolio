@@ -10,6 +10,7 @@ export const site = {
     linkedin: "https://linkedin.com/in/sam-fiallos",
     github: "https://github.com/samthropic",
   },
+  resume: "/Sam_Fiallos_Resume.pdf",
 };
 
 export type Still = {
